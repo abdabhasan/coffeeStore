@@ -1,13 +1,16 @@
 import styled from "styled-components";
-
+import SocialMedia from "./SocialMedia";
 const Footer = () => {
   return (
     <Wrapper>
-      <h5>
-        &copy;{new Date().getFullYear()}
-        <span> أرض القهوة</span>
-      </h5>
-      <h5> الحقوق محفوظة</h5>
+      <div>
+        <h5>
+          &copy;{new Date().getFullYear()}
+          <span> أرض القهوة</span>
+          الحقوق محفوظة
+        </h5>
+      </div>
+      <SocialMedia />
     </Wrapper>
   );
 };
@@ -16,7 +19,7 @@ const Wrapper = styled.footer`
   height: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background: var(--clr-black);
   text-align: center;
@@ -31,6 +34,7 @@ const Wrapper = styled.footer`
     text-transform: none;
     line-height: 1.25;
   }
+
   @media (min-width: 776px) {
     flex-direction: row;
   }
