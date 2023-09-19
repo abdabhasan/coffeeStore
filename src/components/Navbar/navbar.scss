@@ -1,19 +1,16 @@
-@import "../../index.scss";
+@import "../../styles/variables.scss";
 
 nav {
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $bgColorPrimary;
-  p {
-    margin: auto 0;
-  }
+  background-color: $bgPrimary;
 
   .nav-center {
     width: 90vw;
     margin: 0 auto;
-    max-width: var(--max-width);
+    max-width: $widthMax;
   }
   .nav-header {
     display: flex;
@@ -36,9 +33,6 @@ nav {
   .nav-links {
     display: none;
   }
-  .cart-btn-wrapper {
-    display: none;
-  }
   @media (min-width: 992px) {
     .nav-toggle {
       display: none;
@@ -55,18 +49,15 @@ nav {
         margin: 0 0.5rem;
       }
       a {
-        color: $colorDark;
+        color: $textDark;
         font-size: 1rem;
         text-transform: capitalize;
-        letter-spacing: var(--spacing);
+        letter-spacing: $spacing;
         padding: 0.5rem;
         &:hover {
-          border-bottom: 2px solid var(--clr-primary-7);
+          border-bottom: 2px solid $underlineColor;
         }
       }
-    }
-    .cart-btn-wrapper {
-      display: grid;
     }
   }
 }

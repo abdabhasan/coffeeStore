@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: $colorBlack;
+  text-align: center;
+
+  span {
+    color: $colorPrimary;
+  }
+
+  h5 {
+    color: $colorWhite;
+    margin: 0.1rem;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.25;
+  }
+
+  @media (min-width: 776px) {
+    flex-direction: row;
+  }
+}

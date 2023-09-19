@@ -1,13 +1,19 @@
 import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar/Sidebar";
+import Footer from "./Footer/Footer";
 import SocialMedia from "./SocialMedia";
-import Products from "./Products";
+import Products from "./Products/Products";
 import Product from "./Product";
 import Hero from "./Hero";
-import Services from "./Services";
-import Contact from "./Contact";
+import Services from "./Services/Services";
+import Newsletter from "./Newsletter/Newsletter";
 import Carousel from "./Carousel";
+import Stars from "./Stars";
+import AddToCart from "./AddToCart";
+import ContactUs from "./ContactUs";
+import MyMap from "./MyMap";
+import AgentsMap from "./AgentsMap";
+import Agent from "./Agent/Agent";
 
 export {
   Navbar,
@@ -17,7 +23,13 @@ export {
   Products,
   Hero,
   Services,
-  Contact,
+  Newsletter,
   Carousel,
   Product,
+  Stars,
+  AddToCart,
+  ContactUs,
+  MyMap,
+  AgentsMap,
+  Agent,
 };

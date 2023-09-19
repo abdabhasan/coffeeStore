@@ -1,11 +1,11 @@
-import { Products, Hero, Services, Contact } from "../components";
+import { Products, Hero, Services, Newsletter } from "../components";
 const HomePage = () => {
   return (
     <main>
       <Hero />
       <Products />
       <Services />
-      <Contact />
+      <Newsletter />
     </main>
   );
 };

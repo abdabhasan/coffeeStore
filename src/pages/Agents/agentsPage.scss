@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.agents {
+  background-color: $colorPrimary !important;
+  .agents-center {
+    background-color: $colorPrimary !important;
+    margin-top: 4rem;
+    display: grid;
+    gap: 2.5rem;
+
+    h3 {
+      color: $colorSecondary-6;
+    }
+    h4 {
+      color: $colorPrimary-1;
+    }
+    padding: 5rem 0;
+    background: $colorSecondary-9;
+  }
+
+  @media (min-width: 576px) {
+    .agents-center {
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+
+.sidebar-container {
+  text-align: center;
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: $colorPrimary;
+
+    .close-btn {
+      background: transparent;
+      border-color: transparent;
+      color: $colorPrimary;
+      transition: $transition;
+      cursor: pointer;
+      color: $colorBlack;
+
+      &:hover {
+        color: $colorSecondary-6;
+      }
+    }
+  }
+
+  .logo {
+    justify-self: center;
+    height: 45px;
+  }
+
+  .links {
+    margin-bottom: 2rem;
+
+    a {
+      display: block;
+      text-align: left;
+      font-size: 1rem;
+      text-transform: capitalize;
+      padding: 1rem 1.5rem;
+      color: $colorSecondary-3;
+      transition: $transition;
+      letter-spacing: $spacing;
+
+      &:hover {
+        padding: 1rem 1.5rem;
+        padding-left: 2rem;
+        background: $colorSecondary-9;
+        color: $colorSecondary-2;
+      }
+    }
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $colorWhite;
+    transition: $transition;
+    transform: translate(-100%);
+    z-index: -1;
+
+    &.show-sidebar {
+      transform: translate(0);
+      z-index: 999;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .sidebar {
+      display: none;
+    }
+  }
+}

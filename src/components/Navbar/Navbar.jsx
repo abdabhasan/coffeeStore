@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.scss";
 import { useState } from "react";
-import Sidebar from "../Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 
 const links = [
   {
@@ -20,7 +20,7 @@ const links = [
   {
     id: 3,
     text: "الموزعون",
-    url: "/clients",
+    url: "/agents",
   },
 ];
 

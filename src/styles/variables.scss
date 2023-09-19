@@ -1,0 +1,56 @@
+// ======== dark shades of primary ==========
+$colorPrimary-1: #48321e;
+$colorPrimary-2: #593d28;
+$colorPrimary-3: #6a4832;
+$colorPrimary-4: #7a543b;
+// ======== primary ==========
+$colorPrimary: #8c6249;
+// ======== light shades of primary ==========
+$colorPrimary-6: #9d735c;
+$colorPrimary-7: #ae846d;
+$colorPrimary-8: #bf957e;
+$colorPrimary-9: #d0a68f;
+// ======== dark shades of secondary ==========
+$colorSecondary-1: #5e605a;
+$colorSecondary-2: #7c7671;
+$colorSecondary-3: #9a8e88;
+$colorSecondary-4: #b9afa9;
+// ======== secondary ==========
+$colorSecondary: #d9ccc5;
+// ======== light shades of secondary ==========
+$colorSecondary-6: #e9ddd6;
+$colorSecondary-7: #f0e8e2;
+$colorSecondary-8: #f6f2ee;
+$colorSecondary-9: #fbf7f5;
+
+$colorBlack: #000;
+$colorWhite: #fff;
+
+// ======== text ==========
+$textPrimary: #402a25;
+$textDark: $colorBlack;
+$textLight: $colorWhite;
+
+// ======== background ==========
+$bgPrimary: $colorPrimary;
+
+// ======== hover ==========
+$underlineColor: $colorPrimary-4;
+
+// ======== buttons ==========
+$bgBtnPrimary: $colorPrimary;
+
+// ======== spacing ==========
+$widthMax: 1170px;
+$widthFixed: 620px;
+$spacing: 0.1rem;
+
+// ======== transition ==========
+$transition: all 0.3s linear;
+
+// ======== radius ==========
+$radius: 0.25rem;
+
+// ======== shadows ==========
+$shadowDark: 0 5px 15px rgba(0, 0, 0, 0.2);
+$shadowLight: 0 5px 15px rgba(0, 0, 0, 0.1);

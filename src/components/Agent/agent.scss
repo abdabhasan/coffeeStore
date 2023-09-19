@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.agents-container {
+  .agent {
+    background: $colorPrimary-7;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-radius: $radius;
+    h4 {
+      color: $colorPrimary-1;
+    }
+    padding: 5rem 0;
+    background: $colorPrimary-9;
+
+    p {
+      color: $colorPrimary-2;
+    }
+  }
+}

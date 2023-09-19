@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.newsletter {
+  padding: 5rem 0;
+  h3 {
+    text-transform: none;
+  }
+
+  p {
+    line-height: 2;
+    max-width: 45em;
+    color: $colorSecondary;
+  }
+  .newsletter-form {
+    width: 90vw;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .form-input,
+    .submit-btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid $colorBlack;
+    }
+
+    .form-input {
+      border-right: none;
+      color: $colorSecondary-3;
+      border-top-left-radius: $radius;
+      border-bottom-left-radius: $radius;
+
+      &::placeholder {
+        color: $colorBlack;
+        text-transform: capitalize;
+      }
+    }
+
+    .submit-btn {
+      border-top-right-radius: $radius;
+      border-bottom-right-radius: $radius;
+      background: $colorPrimary;
+      text-transform: capitalize;
+      letter-spacing: $spacing;
+      cursor: pointer;
+      transition: $transition;
+      color: $colorBlack;
+
+      &:hover {
+        color: $colorWhite;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 8rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding: 15rem 0;
+  }
+}

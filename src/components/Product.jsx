@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Product = ({ image, name, price, id }) => {
+const Product = ({ cover, name, price, id }) => {
   return (
     <Wrapper>
       <div className="container">
-        <img src={image} alt={name} />
-        <Link to={`/products/${id}`} className="link">
+        <img src={cover} alt={name} />
+        <Link to={`/product/${id}`} className="link">
           <FaSearch />
         </Link>
       </div>
