@@ -54,3 +54,25 @@ $radius: 0.25rem;
 // ======== shadows ==========
 $shadowDark: 0 5px 15px rgba(0, 0, 0, 0.2);
 $shadowLight: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+// ======== MIXINS ==========
+// ======== MIXINS ==========
+
+@mixin product-center {
+  display: grid;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+@mixin carousel-img-100 {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+}
+
+@mixin btn {
+  margin-right: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: $colorSecondary-9;
+}

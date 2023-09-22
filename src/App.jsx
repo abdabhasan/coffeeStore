@@ -35,15 +35,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-مشروع شركة قهوة:
-
-صفحة المنتج:
-
-4- قسم خاص بتقييمات المستخدمين للمنتج مع التعليقات  
-
-HTML - CSS - Bootstrap - JavaScript - jQuery - Sass - Webpack - GIT
-
-*/

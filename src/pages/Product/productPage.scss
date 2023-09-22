@@ -2,18 +2,24 @@
 
 .product-page {
   .product-center {
-    display: grid;
-    gap: 4rem;
-    margin-top: 2rem;
+    @include product-center;
   }
-  .btn {
-    margin-right: 0;
+
+  .btn1 {
+    @include btn;
+    background-color: $bgPrimary;
+  }
+  .btn2 {
+    @include btn;
+    background-color: $colorBlack;
+  }
+  .btn3 {
+    @include btn;
+    background-color: $colorPrimary-1;
   }
 
   .carousel img {
-    width: 100%;
-    height: auto;
-    max-height: 90vh;
+    @include carousel-img-100;
   }
 
   .carousel {
@@ -67,7 +73,6 @@
       button {
         margin-top: 1rem;
         padding: 0.5rem 1rem;
-        background-color: $colorPrimary;
         color: #fff;
         border: none;
         border-radius: 4px;

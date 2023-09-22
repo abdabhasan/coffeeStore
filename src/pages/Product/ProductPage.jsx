@@ -46,7 +46,7 @@ const ProductPage = () => {
   return (
     <main className="product-page">
       <div className="section section-center page">
-        <Link to="/" className="btn">
+        <Link to="/" className={`btn${id}`}>
           العودة إلى الصفحة الرئيسية
         </Link>
         <div className="product-center">
@@ -56,7 +56,7 @@ const ProductPage = () => {
             <h5 className="price">{price}</h5>
             <p className="desc">{description}</p>
             <hr />
-            {<AddToCart product={product} />}
+            {<AddToCart product={product} id={id} />}
           </section>
           <Carousel slide1={cover} slide2={slide2} slide3={slide3} />
         </div>
@@ -77,7 +77,9 @@ const ProductPage = () => {
               value={newComment}
               onChange={handleCommentChange}
             />
-            <button onClick={handleSubmitComment}>نشر</button>
+            <button className={`btn${id}`} onClick={handleSubmitComment}>
+              نشر
+            </button>
           </div>
         </div>
       </div>

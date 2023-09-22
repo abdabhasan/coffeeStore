@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const AddToCart = () => {
+const AddToCart = ({ id }) => {
   return (
     <Wrapper>
       <div className="btn-container">
         <Link
           to="/cart"
-          className="btn"
+          className={`btn${id}`}
           onClick={() => console.log("Added to cart")}
         >
           أضف إلى السلة
@@ -32,24 +32,7 @@ const Wrapper = styled.section`
       display: flex;
     }
   }
-  .color-btn {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background: #222;
-    margin-right: 0.5rem;
-    border: none;
-    cursor: pointer;
-    opacity: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    svg {
-      font-size: 0.75rem;
-      color: var(--clr-white);
-    }
-  }
+
   .active {
     opacity: 1;
   }
